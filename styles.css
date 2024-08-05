@@ -5,7 +5,7 @@ body{
 
 #main-layout{
     display: grid;
-    grid-template-rows: 50px 200px 200px 200px;
+    grid-template-rows: 120px 200px 200px 200px;
     grid-template-columns: 200px 300px 300px 300px ;
     background-color: blue;
 }
@@ -66,8 +66,9 @@ body{
 }
 
 #topbar{
-    background-color: orange;
+    background-color: whitesmoke;
     grid-area: 1/2/2/6;
+    box-shadow: 0px 20px 10px #aaaaaa;
 }
 
 #content-container{
@@ -116,11 +117,12 @@ body{
 .topbar-img {
     height: 20px;
     width: 20px;
+
 }
 
 .icon-img{
-    height: 20px;
-    width: 20px;
+    height: 27px;
+    width: 30px;
 }
 .search input {
     border-radius: 10px;
@@ -128,4 +130,62 @@ body{
     background-color: lightgray;
     border:0;
     height: 20px;
+    margin-left:1%;
+    padding-left: 1%;
+    margin-right: 20%
 }
+.search {
+    padding-left: 3%;
+    padding-top: 2%;
+    display: flex;
+
+}
+
+.search .bell{
+    padding-right: 2%;
+}
+
+.search .profile-top{
+    background-color: yellow;
+    border-radius: 20px;
+    padding: 2px;
+    margin-top: -5px;
+    margin-right: 2% 
+}
+
+.user-info{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 10% 59% 10% 10% 10%;
+}
+
+.user-info button {
+    background-color: cornflowerblue;
+    color:white;
+    border-radius: 25px;
+    height: 30px;
+    width: 80px;
+    border: none;
+    font-weight: bold;
+}
+
+.user-info .profile-bottom {
+    background-color: yellow;
+    border-radius: 25px;
+    height: 50px;
+    width: 55px;
+    margin-left: 35%;
+}
+
+.welcome-card {
+    font-weight: bold;
+}
+
+.welcome-message {
+    font-size: small;
+}
+
+.welcome-user {
+    font-size: large;
+}
+
