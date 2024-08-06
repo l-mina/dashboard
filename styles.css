@@ -74,33 +74,82 @@ body{
 #content-container{
     display: grid;
     grid-template-columns: 300px 300px 200px;
-    grid-template-rows: repeat(4,300px);
+    grid-template-rows: 100px 300px 200px;
     background-color: aquamarine;
     grid-area: 2/2/5/6;
 }
 
 #projects{
-    background-color: brown;
-    grid-area: 1/1/3/4;
+    background-color: lightgray;
+    grid-area: 1/1/4/4;
     display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 50px 100px; 
     
+}
+
+.projects-heading{
+    font-size: large;
+    padding: 2% 4%;
+    grid-area: 1/1/2/3;
+    margin-left: 40px;
+    margin-top: 20px;
 }
 
 #projects-container{
-    background-color: green;
+    grid-area: 2/1/4/4;
+    background-color: lightgray;
     display: grid;
-    grid-template-columns: repeat(2,300px);
-    grid-auto-rows: repeat(3,100px);
-    resize: both;
-    overflow: auto;
+    grid-template-columns: repeat(2,380px);
+    grid-template-rows: repeat(3,183px);
+    gap: 0 10px;
 }
 
 .project{
-    margin: 20px;
-    background-color: red;
-    border: 2px solid black;
-    border-radius: 5px;
-    
+    margin: 10px;
+    margin-left: 40px;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 5px 60px 130px 40px 40px 40px;
+    grid-template-rows: 10px 100px 10px;
+    box-shadow: 3px 3px 3px lightgrey;
+}
+.project-color-bar {
+    grid-area: 1/1/5/2;
+    background-color: goldenrod;
+    border-radius: 40px 0px 0px 40px;
+}
+
+.project-text {
+    grid-area: 1/2/4/6;
+    background-color: white;
+}
+
+.project-text h5 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.project-text p {
+    margin-top: -20px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    color: gray ;
+}
+
+.project-icon1 {
+    grid-area: 4/4/4/4;
+}
+.project-icon2 {
+    grid-area: 4/5/4/5;
+}
+.project-icon3 {
+    grid-area: 4/6/4/6;
+}
+
+.project-tool {
+    height: auto;
+    width: 20px;
 }
 
 .content-rightside{
@@ -188,4 +237,5 @@ body{
 .welcome-user {
     font-size: large;
 }
+
 
