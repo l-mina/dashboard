@@ -75,8 +75,9 @@ body{
     display: grid;
     grid-template-columns: 300px 300px 200px;
     grid-template-rows: 100px 300px 200px;
-    background-color: aquamarine;
+    background-color: lightgrey;
     grid-area: 2/2/5/6;
+    box-shadow: 1px -3px 5px -1px #aaaaaa;
 }
 
 #projects{
@@ -113,7 +114,7 @@ body{
     display: grid;
     grid-template-columns: 5px 60px 130px 40px 40px 40px;
     grid-template-rows: 10px 100px 10px;
-    box-shadow: 3px 3px 3px lightgrey;
+    box-shadow: 3px 3px 3px #aaaaaa;
 }
 .project-color-bar {
     grid-area: 1/1/5/2;
@@ -155,12 +156,10 @@ body{
 .content-rightside{
     display: flex;
     flex-direction: column;
-    row-gap: 50%;
     grid-area: 1/4/4/5;
 }
 
 .content-rightside > div {
-    border: 1px solid black;
 }
 
 .topbar-img {
@@ -238,4 +237,104 @@ body{
     font-size: large;
 }
 
+#announcements{
 
+}
+
+.announcements-heading, .trending-heading{
+    font-size: large;
+    padding: 2% 4%;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.announcements{
+
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    
+    background-color: white;
+    box-shadow: 3px 3px 3px #aaaaaa; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.announcement-div {
+    width: 100%;
+    height: 1px;
+    background-color: lightgrey;
+}
+
+.announcement-text p {
+    font-size: 0.8rem;
+    color: gray ;
+}
+.announcement-text h6 {
+    margin-bottom: -10px;
+    margin-top: 10px
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 100px 150px;
+    grid-template-rows: 50px 50px 50px 15px;
+    row-gap: 2px;
+    
+    border-radius: 10px;
+    padding-left: 0;
+    padding-right: 20px;
+    
+    background-color: white;
+    box-shadow: 3px 3px 3px #aaaaaa;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.trending-icon1 {
+    grid-area: 1/1/2/2;
+}
+.trending-icon2 {
+    grid-area: 2/1/3/2;
+}
+.trending-icon3 {
+    grid-area: 3/1/4/2;
+}
+
+.trending-icon1 img, .trending-icon2 img,.trending-icon3 img{
+    height: 35px;
+    width: 38px;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 5px;
+    margin-left: 30px;
+    margin-top: 10px 
+    
+}
+.trending-icon2 img{
+    background-color: coral;
+}
+.trending-icon3 img{
+    background-color: lightblue;
+}
+.trending-text1{
+    grid-area: 1/2/2/3;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+.trending-text2{
+    grid-area: 2/2/3/3;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+.trending-text3{
+    grid-area: 3/2/4/3;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+.trending-text1 p, .trending-text2 p,.trending-text3 p  {
+    margin-top: 2px;
+    color: lightgray ;
+}
